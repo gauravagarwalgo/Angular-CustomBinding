@@ -71,4 +71,12 @@ export class CoursesComponent {
        this.courseCountRadioButton=data;
        //console.log(this.courseCountRadioButton);
     }
+
+    //Search functionality
+    searchText:string='';
+    onSearchTextEntered(searchValue:string)
+    {
+      this.searchText=searchValue;
+      console.log(this.searchText);
+    }
 }
